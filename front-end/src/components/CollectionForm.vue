@@ -112,6 +112,8 @@
 </template>
 
 <script>
+import { sentMessage } from '@/api';
+import { ElMessage } from 'element-plus'
 
 export default {
   name: 'CollectionForm',
@@ -133,7 +135,15 @@ export default {
     onSubmit(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          console.log('发送请求')
+          sentMessage(this.form).then(
+              response => {
+                ElMessage('提交成功')
+                console.log(response);
+              }
+          ).catch((error) => {
+            ElMessage.error('提交失败')
+            console.log(error);
+          });
         } else {
           console.log('error submit!!');
           return false;
