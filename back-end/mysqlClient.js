@@ -1,8 +1,19 @@
-const mysqlClient = require('mysql')
-let connection = mysqlClient.createConnection({
-  host:'localhost',
-  user:'root',
-  password:'admin123',
-  database:'vue_store' //数据库名称
+const mysql = require('mysql2')
+
+const mysqlClient = mysql.createPool({
+  database: 'xxx',
+  user: 'root',
+  password: 'Cc5971415'
 })
-module.exports = connection
+
+mysqlClient.getConnection((err, conn) => {
+  conn.connect(err => {
+    if(err){
+      console.log('mysql连接失败', err)
+    }else{
+      console.log('mysql数据库连接成功')
+    }
+  })
+})
+
+module.exports = { mysqlClient }
