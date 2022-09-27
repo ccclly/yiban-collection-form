@@ -21,7 +21,7 @@ const sentMessage = (form) => {
       'name': name,
       'department1': department1,
       'department2': department2,
-      'adjust': adjust,
+      'adjust': adjust === true ? '接受调剂' : '不接受调剂',
       'qq': qq,
       'phone': phone,
       'advantage': advantage
@@ -29,4 +29,8 @@ const sentMessage = (form) => {
   )
 }
 
-export { sentMessage };
+const getMessage = () => {
+  return instance.get('all');
+}
+
+export { sentMessage, getMessage };

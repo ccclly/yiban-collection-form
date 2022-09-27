@@ -1,15 +1,11 @@
 <template>
-  <CollectionForm/>
+  <router-view/>
 </template>
 
 <script>
-import CollectionForm from './components/CollectionForm.vue'
 
 export default {
-  name: 'App',
-  components: {
-    CollectionForm
-  }
+  name: 'App'
 }
 </script>
 

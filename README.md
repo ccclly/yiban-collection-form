@@ -30,7 +30,7 @@ create table yiban (
 
 ### 3后端部署（使用forever守护进程）
 ```shell
-# forever不谦容高版本npm，使用n切换node版本为10.0.0
+# forever可能不谦容高版本node，遂使用n切换node版本为10.0.0
 npm i -g n  #安装node版本切换工具
 n 10.0.0   #安装10.0.0的node版本
 npm i -g forever  #安装forever
