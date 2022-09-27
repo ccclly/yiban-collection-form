@@ -40,6 +40,6 @@ forever stop index.js  #使用forever停止进程
 ### 4用户访问
 在云服务器控制台开放8081端口
 
-输入服务器的ip地址+:8081(如:http://xx.xxx.xx.xx:8081)访问投递界面
+输入服务器的ip地址+:8081(如:http://xx.xxx.xx.xx:8081) 访问投递界面
 
 输入服务器的ip地址+:8081/all(如:http://xx.xxx.xx.xx:8081/all) 查询数据库结果

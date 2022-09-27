@@ -15,21 +15,35 @@ app.use(express.static(path.join(__dirname, 'dist')))
 // 发送投递请求
 app.post('/sent', (req, res) => {
   let obj = req.body;
-  const sql = `INSERT INTO yiban (name, department1, department2, adjust, phone, qq, advantage) VALUES (?, ?, ?, ?, ?, ?, ?);`
+  const querySql = `select * from yiban;`
+  const insertSql = `INSERT INTO yiban (name, department1, department2, adjust, phone, qq, advantage) VALUES (?, ?, ?, ?, ?, ?, ?);`
   console.log(obj)
-  mysqlClient.execute(sql, [
-    obj.name,
-    obj.department1,
-    obj.department2,
-    obj.adjust,
-    obj.qq,
-    obj.phone,
-    obj.advantage
-  ],function(err, results, fields) {
-    console.log(results); // 结果集
-    console.log(fields); // 额外的元数据（如果有的话）
-    console.log(err)
-    res.json({aa: '123'});
+  mysqlClient.execute(querySql, function (err, results, fields) {
+    let toInsert = true
+    results.forEach(value => {
+      if (value.qq === obj.qq) {
+        toInsert = false
+      }
+    })
+    if (toInsert) {
+      mysqlClient.execute(insertSql, [
+        obj.name,
+        obj.department1,
+        obj.department2,
+        obj.adjust,
+        obj.qq,
+        obj.phone,
+        obj.advantage
+      ],function(err, results, fields) {
+        console.log(results); // 结果集
+        console.log(fields); // 额外的元数据（如果有的话）
+        console.log(err)
+        res.json({type: 'ok'});
+      })
+    } else {
+      res.json({ type: 'repeat' });
+    }
+
   })
 })
 
