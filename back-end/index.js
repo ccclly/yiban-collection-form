@@ -1,8 +1,11 @@
 const express = require('express')
 const path = require('path')
+const compression = require('compression');
+
 const { mysqlClient } = require('./mysqlClient');
 const app = express()
-
+// 开启gzip压缩资源
+app.use(compression());
 // 处理application/json类型的请求体
 app.use(express.json());
 
