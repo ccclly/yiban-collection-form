@@ -20,19 +20,22 @@ app.post('/sent', (req, res) => {
   console.log(obj)
   mysqlClient.execute(querySql, function (err, results, fields) {
     let toInsert = true
+    console.log(results)
+    console.log(obj.phone)
     results.forEach(value => {
-      if (value.qq === obj.qq) {
+      if (value.phone == obj.phone) {
         toInsert = false
       }
     })
+    console.log(toInsert)
     if (toInsert) {
       mysqlClient.execute(insertSql, [
         obj.name,
         obj.department1,
         obj.department2,
         obj.adjust,
-        obj.qq,
         obj.phone,
+        obj.qq,
         obj.advantage
       ],function(err, results, fields) {
         console.log(results); // 结果集
@@ -43,7 +46,6 @@ app.post('/sent', (req, res) => {
     } else {
       res.json({ type: 'repeat' });
     }
-
   })
 })
 
