@@ -1,7 +1,7 @@
 <template>
   <el-table :data="tableData" stripe style="width: 100%">
-    <el-table-column prop="id" label="id" width="180" />
-    <el-table-column prop="name" label="名字" width="180" />
+    <el-table-column prop="id" label="id"/>
+    <el-table-column prop="name" label="名字"/>
     <el-table-column prop="department1" label="意向部门1" />
     <el-table-column prop="department2" label="意向部门2" />
     <el-table-column prop="adjust" label="是否接受调剂" />
