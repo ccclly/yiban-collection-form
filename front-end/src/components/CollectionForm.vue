@@ -137,12 +137,12 @@ export default {
         if (valid) {
           sentMessage(this.form).then(
               response => {
-                if (response.type === 'ok') {
+                if (response.data.type === 'ok') {
                   ElMessage({
                     message: '提交成功',
                     type: 'success',
                   });
-                } else if (response.type === 'repeat') {
+                } else if (response.data.type === 'repeat') {
                   ElMessage.error('重复提交');
                 }
                 console.log(response);
