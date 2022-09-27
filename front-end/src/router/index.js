@@ -4,11 +4,11 @@ import CollectionForm from '@/components/CollectionForm';
 
 const routes = [
   { path: '/', component: CollectionForm },
-  { path: '/all', component: FormResult },
+  { path: '/result', component: FormResult },
 ]
 
 const router = VueRouter.createRouter({
-  history: VueRouter.createWebHistory(),
+  history: VueRouter.createWebHashHistory(),
   routes,
 })
 
