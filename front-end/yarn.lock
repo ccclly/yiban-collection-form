@@ -1690,7 +1690,7 @@
 
 "@vue/vue-loader-v15@npm:vue-loader@^15.9.7":
   "integrity" "sha512-VU6tuO8eKajrFeBzMssFUP9SvakEeeSi1BxdTH5o3+1yUyrldp8IERkSdXlMI2t4kxF2sqYUDsQY+WJBxzBmZg=="
-  "resolved" "https://registry.npmmirror.com/vue-loader/-/vue-loader-15.10.0.tgz"
+  "resolved" "https://registry.npmjs.org/vue-loader/-/vue-loader-15.10.0.tgz"
   "version" "15.10.0"
   dependencies:
     "@vue/component-compiler-utils" "^3.1.0"
@@ -2617,7 +2617,7 @@
   "resolved" "https://registry.npmmirror.com/css-declaration-sorter/-/css-declaration-sorter-6.3.1.tgz"
   "version" "6.3.1"
 
-"css-loader@*", "css-loader@^6.5.0":
+"css-loader@^6.5.0":
   "integrity" "sha512-yB5CNFa14MbPJcomwNh3wLThtkZgcNyI2bNMRt8iE5Z8Vwl7f8vQXFAzn2HDOJvtDq2NTZBUGMSUNNyrv3/+cw=="
   "resolved" "https://registry.npmmirror.com/css-loader/-/css-loader-6.7.1.tgz"
   "version" "6.7.1"
@@ -3451,11 +3451,6 @@
   "resolved" "https://registry.npmmirror.com/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
-"fsevents@~2.3.2":
-  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
-  "resolved" "https://registry.npmmirror.com/fsevents/-/fsevents-2.3.2.tgz"
-  "version" "2.3.2"
-
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmmirror.com/function-bind/-/function-bind-1.1.1.tgz"
@@ -3612,7 +3607,7 @@
 
 "hash-sum@^1.0.2":
   "integrity" "sha512-fUs4B4L+mlt8/XAtSOGMUO1TXmAelItBPtJG7CyHJfYTdDjwisntGO2JQz7oUsatOY9o68+57eziUVNw/mRHmA=="
-  "resolved" "https://registry.npmmirror.com/hash-sum/-/hash-sum-1.0.2.tgz"
+  "resolved" "https://registry.npmjs.org/hash-sum/-/hash-sum-1.0.2.tgz"
   "version" "1.0.2"
 
 "hash-sum@^2.0.0":
@@ -4104,7 +4099,7 @@
 
 "loader-utils@^1.1.0":
   "integrity" "sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA=="
-  "resolved" "https://registry.npmmirror.com/loader-utils/-/loader-utils-1.4.0.tgz"
+  "resolved" "https://registry.npmjs.org/loader-utils/-/loader-utils-1.4.0.tgz"
   "version" "1.4.0"
   dependencies:
     "big.js" "^5.2.2"
@@ -6180,7 +6175,7 @@
   "resolved" "https://registry.npmmirror.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.5.tgz"
   "version" "0.4.5"
 
-"webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.54.0", "webpack@>=2":
+"webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.54.0", "webpack@>=2":
   "integrity" "sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA=="
   "resolved" "https://registry.npmmirror.com/webpack/-/webpack-5.74.0.tgz"
   "version" "5.74.0"

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 修改localhost
 const instance = axios.create({
-  baseURL: 'http://localhost:8081',
+  baseURL: 'http://114.115.243.171:8081',
 })
 
 const sentMessage = (form) => {

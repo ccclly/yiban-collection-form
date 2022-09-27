@@ -1,9 +1,9 @@
 const mysql = require('mysql2')
 
 const mysqlClient = mysql.createPool({
-  database: 'xxx',
+  database: 'yiban',
   user: 'root',
-  password: 'Cc5971415'
+  password: '123456'
 })
 
 mysqlClient.getConnection((err, conn) => {
