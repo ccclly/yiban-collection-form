@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const compression = require('compression');
+const serveStatic = require('serve-static')
+
 
 const { mysqlClient } = require('./mysqlClient');
 const app = express()
@@ -10,7 +12,9 @@ app.use(compression());
 app.use(express.json());
 
 // 部署静态页面
-app.use(express.static(path.join(__dirname, 'dist')))
+// app.use(express.static(path.join(__dirname, 'dist')))
+app.use(serveStatic(path.join(__dirname, 'dist')))
+
 
 // 发送投递请求
 app.post('/sent', (req, res) => {
